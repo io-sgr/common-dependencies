@@ -68,7 +68,8 @@
 
         <!-- For http/rest -->
         <dep.retrofit.version>2.5.0</dep.retrofit.version>
-        <dep.okhttp.version>3.13.1</dep.okhttp.version>
+        <dep.okhttp.version>3.14.2</dep.okhttp.version>
+        <dep.okio.version>1.17.4</dep.okio.version>
         <dep.apache-httpcore.version>4.4.11</dep.apache-httpcore.version>
         <dep.apache-httpclient.version>4.5.9</dep.apache-httpclient.version>
         <dep.apache-httpasyncclient.version>4.1.4</dep.apache-httpasyncclient.version>
@@ -82,6 +83,7 @@
         <dep.log4j2.version>2.12.0</dep.log4j2.version>
 
         <!-- Others -->
+        <dep.spotbugs-annotation.version>3.1.11</dep.spotbugs-annotation.version>
         <dep.jwt.version>0.9.1</dep.jwt.version>
 
         <!-- For tests -->
@@ -145,6 +147,11 @@
                 <artifactId>okhttp</artifactId>
                 <version>${dep.okhttp.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio</artifactId>
+                <version>${dep.okio.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -197,6 +204,13 @@
                 <version>${dep.log4j2.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-annotations</artifactId>
+                <version>${dep.spotbugs-annotation.version}</version>
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
