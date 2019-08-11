@@ -26,7 +26,7 @@
     </parent>
 
     <artifactId>common-dependencies</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
 
 
@@ -47,7 +47,7 @@
         <connection>scm:git:git@github.com:io-sgr/common-dependencies.git</connection>
         <developerConnection>scm:git:git@github.com:io-sgr/common-dependencies.git</developerConnection>
         <url>https://github.com/io-sgr/common-dependencies</url>
-      <tag>HEAD</tag>
+      <tag>v1.1.0</tag>
   </scm>
     <developers>
         <developer>
